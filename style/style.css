@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    max-width: 1000px; /* ajusta el ancho máximo del cuerpo según tus necesidades */
+  }
+  body {
+    background-image: url('../media/Logo_header.png');
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: center center ;
+    min-height: 100vh; /* Establece la altura mínima del elemento en la altura de la ventana gráfica */
+    display: flex;
+    flex-direction: column; 
+  }
+/* Estilos para pantallas grandes */
+nav {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  nav li:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  nav li:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  nav li:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  nav li:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+    
+  nav li {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }    
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  #texto-oculto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  #texto-oculto p {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+  }
+  footer {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+  }
+  #derechos{
+    font-size:12px ;
+  }
+
+ /* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    body{
+      font-family: 'Amatic SC', cursive;
+      background-size: 300px;
+      background-repeat: no-repeat;
+      background-position: center center ;
+      min-height: 100vh; /* Establece la altura mínima del elemento en la altura de la ventana gráfica */
+      display: flex;
+      flex-direction: column; 
+    }
+    #derechos{
+      font-size:5px ;
+      position: absolute;
+      bottom: -80px;
+      width: 100%;
+      text-align: center;
+    }
+     
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+
+    nav a {
+      font-size: 0.8rem;
+    }
+    
+    body {
+      max-width: none;
+      margin: 0;
+    }
+    footer {
+      position: absolute;
+      bottom: 300px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
